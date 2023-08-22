@@ -11,6 +11,8 @@ body {
   background-image: url('../src/assets/bgImage.jpg');
   background-size: 100%;
   position: relative;
+  background-repeat: no-repeat;
+  background-color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
