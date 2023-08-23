@@ -12,7 +12,8 @@ body {
   background-size: 100%;
   position: relative;
   background-repeat: no-repeat;
-  background-color: black;
+  background-color: rgb(50, 55, 61);
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
