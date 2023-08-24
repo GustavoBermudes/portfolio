@@ -3,15 +3,14 @@ import './style.css';
 import Head from '../../components/head/Head';
 
 function Home() {
-  const [scrollOpacity, setScrollOpacity] = useState(0);
+  const [scrollOpacity, setScrollOpacity] = useState(0.4);
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
-    const fadeInStart = 100; 
-    const maxOpacity = 1;
-    const scrollOpacityValue = Math.min(1, (scrollPosition - fadeInStart) / 200); 
+    const fadeInStart = 260;
+    const scrollOpacityValue = Math.min(1, (scrollPosition - fadeInStart) / 300);
 
-    setScrollOpacity(scrollOpacityValue > 0 ? scrollOpacityValue : 0);
+    setScrollOpacity(scrollOpacityValue > 0.4 ? scrollOpacityValue : 0.4);
   };
 
   useEffect(() => {
@@ -22,9 +21,23 @@ function Home() {
   return (
     <div>
       <Head />
-      <section className="full-section" style={{ opacity: scrollOpacity }}>
+      <section className="full-section">
+        <div className="background-div" style={{ opacity: scrollOpacity }}></div>
+        <div className="content-div">
+          <div className="right-content">
+            <h2>WEB</h2>
+            <h2>DESIGNER</h2>
+          </div>
+          <div className="left-content">
+            <p>I'm a web designer who creates minimalist web pages. <br/ >I'm passionate about crafting projects that blend functional and aesthetic design to deliver engaging digital experiences.</p>
+          </div>
+        </div>
       </section>
-      <section className="full-section" style={{ opacity: scrollOpacity }}>
+      <section className="full-section">
+        <div className="background-div" style={{ opacity: scrollOpacity }}></div>
+        <div className="content-div">
+        
+        </div>
       </section>
     </div>
   );

@@ -1,12 +1,14 @@
 .header {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.432);
-  color: rgba(255, 255, 255, 0.432);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.623);
+  color: rgba(255, 255, 255, 0.822);
   padding: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  letter-spacing: 3px;
   width: 95%; 
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .titleDiv {
@@ -17,18 +19,18 @@
 
 .titleDiv h3 {
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.986);
+  color: rgba(255, 255, 255, 0.822);
   margin: 0;
 }
 
 .SubtitleDiv p {
-  color: rgba(255, 255, 255, 0.952);
+  color: rgba(255, 255, 255, 0.822);
   font-size: 15px;
   margin: 0; 
 }
 
 .titleDiv p {
-  color: rgba(255, 255, 255, 0.952);
+  color: rgba(255, 255, 255, 0.822);
   font-size: 15px;
   margin: 0; 
 }
@@ -55,7 +57,7 @@
 }
 
 .nav-item a {
-  color: rgba(255, 255, 255, 0.952);
+  color: rgba(255, 255, 255, 0.822);
   font-size: 15px;
   text-decoration: none;
 }
